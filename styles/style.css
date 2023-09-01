@@ -52,7 +52,6 @@ ol {
 
 .button {
   border: 1px solid #fff;
-  block-size: 34px;
   padding: 6px 0;
   color: #fff;
   font-family: inherit;
@@ -60,11 +59,12 @@ ol {
   font-size: 18px;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
+  block-size: 34px;
 }
 
 .button:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .button:active {
@@ -83,18 +83,18 @@ ol {
 .content {
   display: flex;
   gap: 30px;
+  margin: auto;
   max-inline-size: 1140px;
   max-block-size: 534px;
-  margin: auto;
 }
 
 .content__list {
   position: relative;
-  width: 100%;
-  max-height: 298px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
+  max-height: 298px;
   overflow: auto;
 }
 
@@ -128,7 +128,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -176,22 +176,22 @@ ol {
 }
 
 .result {
-  inline-size: 711px;
   margin-block-start: 78px;
+  inline-size: 711px;
 }
 
 .result__video-container {
   position: relative;
+  margin: 0;
   inline-size: 100%;
   block-size: 386px;
-  margin: 0;
 }
 
 .result__video {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form {
@@ -218,8 +218,6 @@ ol {
 }
 
 .search-form__textfield {
-  inline-size: 225px;
-  block-size: 27px;
   border: none;
   border-block-start: 1px solid #FFF;
   border-block-end: 1px solid #FFF;
@@ -231,7 +229,13 @@ ol {
   font-style: normal;
   line-height: normal;
   background-color: transparent;
-  appearance: none;
+  inline-size: 225px;
+  block-size: 27px;
+  appearance: none; 
+}
+
+.search__form-textfield:focus {
+  outline: none;
 }
 
 .search-form__textfield:hover {
@@ -243,8 +247,8 @@ ol {
 }
 
 .search-form__submit-button {
-  inline-size: 194px;
   align-self: flex-end;
+  inline-size: 194px;
 }
 
 .search-form__label {
@@ -277,9 +281,9 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #fff;
   inline-size: 19px;
   block-size: 19px;
-  border: 1px solid #fff;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -289,9 +293,9 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
   display: block;
+  background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
-  background-color: #fff;
 }
 
 .title {
@@ -311,5 +315,4 @@ ol {
 
 .more-button {
   inline-size: 399px;
-  text-align: center;
 }
