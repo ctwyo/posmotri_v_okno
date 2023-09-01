@@ -188,7 +188,7 @@ ol {
   border-bottom: 1px solid #FFF;
   padding: 0;
   color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -208,6 +208,7 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
+  font-family: inherit;
   width: 194px;
   height: 34px;
   border: 1px solid #FFF;
